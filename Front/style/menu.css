@@ -4,6 +4,8 @@
 	height: 70px;
 
 	width: 100%; 
+	left: 0; 
+	top: 0; 
 	position: fixed; 
 }
 
@@ -36,7 +38,7 @@ ul, ol{
     display: flex;
     justify-content: right;
     padding-top: 15px;
-    
+    margin-right: 3rem;
 }
 
 nav li a{
@@ -46,7 +48,6 @@ nav li a{
     display: block;
     text-align: center;
 }
-
 nav li a:hover{
     text-decoration: none;
     background: #0b76a6;
