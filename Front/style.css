@@ -63,7 +63,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
+	padding-left: 3rem ;
 }
 
 h2{
