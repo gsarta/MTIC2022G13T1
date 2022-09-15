@@ -1,0 +1,40 @@
+form{
+    box-shadow: 0px 0px 5px 0px #333333;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    border-radius: 5px;
+    width: 450px;
+    margin: auto;
+    padding: 20px 0px ;
+}
+form input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #B5B2B2;
+}
+select{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.enviar{
+    background:#008CBA ;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 5px;
+    width: 250px;
+    box-shadow: 0px 0px 5px 0px #333333;
+    border: none;
+
+}
+.enviar:hover{
+    background:#B5B2B2;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+.img-crear-mascota{
+    width: 50%;
+}

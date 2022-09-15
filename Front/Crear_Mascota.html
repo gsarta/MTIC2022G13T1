@@ -5,38 +5,37 @@
 	<title>Mascotas</title>
 
         <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="./style/menu.css">
+		<link rel="stylesheet" href="./style/from-crear.css">
 </head>
 
 <body>
 	
 	<header id="main-header">
 		
-		<a id="logo-header" href="#">
+		<a id="logo-header" href="Index.html">
 			<span class="site-name">MASCOTA FELIZ</span>
 		</a> 
 
 		<nav>
-			<ul>
+			<ul class="navegacion">
 				<li><a href="Index.html">Inicio</a></li>
 				<li><a href="#">Mascotas</a>
 					<ul> 
-						<li><span></span><a href="Crear_Mascota.html">Crear Mascotas</a></li>
-						<hr> 
-						<li><span></span><a href="Consulta_Mascota.html">Listar Mascotas</a></li> 
+						<li><a href="Crear_Mascota.html" class="submenu-primero">Crear Mascotas</a></li>
+						<li><a href="Consulta_Mascota.html">Listar Mascotas</a></li> 
 					</ul> 
 				</li>
 				<li><a href="#">Propietarios</a>
 					<ul> 
-						<li><span></span><a href="Crear_Duenos.html">Crear Propietarios</a></li>
-						<hr> 
-						<li><span></span><a href="Consulta_Duenos.html">Listar Propietarios</a></li> 
+						<li><a href="Crear_Duenos.html" class="submenu-primero">Crear Propietarios</a></li> 
+						<li><a href="Consulta_Duenos.html">Listar Propietarios</a></li> 
 					</ul> 
 				</li>
 				<li><a href="#">Veterinarios</a>
 					<ul> 
-						<li><span></span><a href="Crear_Veterinarios.html">Crear Veterinario</a></li>
-						<hr> 
-						<li><span></span><a href="Consulta_Veterinarios.html">Listar Veterinarios</a></li> 
+						<li><a href="Crear_Veterinarios.html" class="submenu-primero">Crear Veterinario</a></li> 
+						<li><a href="Consulta_Veterinarios.html">Listar Veterinarios</a></li> 
 					</ul> 
 				</li>
 			</ul>
@@ -46,34 +45,24 @@
 	
 	<section id="main-content">
 	
-			<header>
-				
-				<h1>¡REGISTRA YA TU AMIGO PELUDO!</h1>
-			</header>
-			
-			
 			<div class="content">
-					<P></P>
-					<form class:="Form" action="../../form-result.php" target="_blank">
+				<form class:="form-crear" action="../../form-result.php" target="_blank">
+						<h2> Registra a tu peludo amigo</h2>
 
-						<p>Nombre: <input type="text" name="nombre"></p>
-						<p></p>						
-						Especie:
-						<select name="genero">
+						<input type="text" name="nombre" placeholder="Nombre">
+												
+						<input type="text" name="color" placeholder="Color">
+						<input type="text" name="raza" placeholder="Raza">
+						<label for="genero">Genero</label>
+						<select name="genero" class="opciones">
 							<option>Perro</option>
 							<option>Gato</option>
 						</select>
-						</p>
-						<p>Color: <input type="text" name="color"></p>
-						<p>Raza: <input type="text" name="raza"></p>
-						</p>
-					
-						<p><input type="submit" value="Enviar información"></p>
-					
+										
+						<input type="submit" value="Registrar Mascota" class="enviar">
 					</form>
-					<p></p>
-					<img src="IMG/cat-and-dog.jpg" alt="Gatito"/>
-
+					
+					<img src="IMG/gatoYPerro.png" alt="Gatito" class="img-crear-mascota"/>
 			</div>
 	
 	</section> <!-- / #main-content -->
