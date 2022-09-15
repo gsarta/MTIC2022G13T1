@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="./style/menu.css">
+		<link rel="stylesheet" href="./style/from-crear.css">
 </head>
 
 <body>
@@ -43,32 +44,23 @@
 	</header>
 	
 	<section id="main-content">
-	
-			<header>
-				
-				<h1>GRUPO 13 - CICLO 3</h1>
-			</header>
-			
-			
-			
-			<div class="content">
-				<P></P>
-				<form class:="Form" action="../../form-result.php" target="_blank">
+		<div class="content">
+			<form class:="form-crear" action="../../form-result.php" target="_blank">
+				<h3>Registrar Veterinario</h3>
 
-					<p>Nombre: <input type="text" name="nombre"></p>
-					<p>Apellido: <input type="text" name="color"></p>
-					<p>Dirección: <input type="text" name="direccion"></p>
-					<p>Telefono: <input type="text" name="telefono"></p>
-					<p>Tarjeta Profesional: <input type="text" name="tarjeta_profesional">
+				 <input type="text" name="nombre" placeholder="Nombre">
+				 <input type="text" name="color" placeholder="Color">
+				 <input type="text" name="direccion" placeholder="Dirección">
+				 <input type="text" name="telefono" placeholder="Telefono">
+				 <input type="text" name="tarjeta_profesional" placeholder="Tarjeta Profesional">
 					
+					<input type="submit" value="Crear Veterinario" class="enviar">
 				
-					<input type="submit" value="Enviar información">
-				
-				</form>
+			</form>
 			
-				<img src="IMG/Veterinario.jpg" alt="Gatito"/>
+				<img src="IMG/Veterinario.jpg" alt="Gatito" class="img-crear-mascota"/>
 
-			</div>
+		</div>
 			
 	
 	</section> 
