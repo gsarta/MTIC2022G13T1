@@ -6,6 +6,8 @@
 
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="./style/menu.css">
+		<link rel="stylesheet" href="./style/consulta.css">
+
 </head>
 
 <body>
@@ -42,58 +44,60 @@
 
 	</header>
 	
-	<section id="main-content">
-	
-		<article>
-			<header>
+	<section class="consulta-filtros">
+		
+			<div class="content-consulta">
 				
-				<h1>LISTA DE MASCOTAS</h1>
-			</header>
-			
-			
-			
-			<div class="content">
-				<P></P>
+				<div class="box-filtros">
+					<h3>Consultar Mascota</h3>
 
-				<label for="membership">Seleccione el campo por el que desea filtrar:</label>
-				<select name="mascota" id="mascota">
-					<option value="Id">Id</option>
-					<option value="Nombre">Nombre</option>
-					<option value="Peso" selected>Peso</option>
-					<option value="Dueño">Dueño</option>
-				</select>
-				<p></p>
-				<label>Valor a buscar:</label>
-				<input type="text">
+					<div class="box-campo">
+						<label for="membership">Seleccione el campo por el que desea filtrar:</label>						
+					</div>
 
-				<p></p>
-				<button type="button" class="boton">Consultar</button>
-				<p></p>
-			
-				<table class="Table">
-
-					<tr>
-					  <th>ID</th>
-					  <th>NOMBRE</th>
-					  <th>COLOR</th>
-					  <th>ESPECIE</th>
-					  <th>RAZA</th>
-					  <th>DUEÑO</th>
-					</tr>
-					<tr>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					</tr>
+					<div class="box-campo">
+						<select name="mascota" id="mascota" class="select">
+							<option value="Id">Id</option>
+							<option value="Nombre">Nombre</option>
+							<option value="Peso" selected>Peso</option>
+							<option value="Dueño">Dueño</option>
+						</select>
+						<input type="text" placeholder="Valor a buscar">
+					</div>
 					
-				</table>
+					<div class="box-campo">
+						<button type="button" class="boton">Consultar</button>
+						<button type="button" class="boton">Editar</button>
+						<button type="button" class="boton-eliminar">Eliminar</button>
+					</div>
+				</div>
+			
+				<div class="table">
+
+					<table>
+	
+						<tr>
+						  <th>ID</th>
+						  <th>NOMBRE</th>
+						  <th>COLOR</th>
+						  <th>ESPECIE</th>
+						  <th>RAZA</th>
+						  <th>DUEÑO</th>
+						</tr>
+						<tr>
+						  <td>2</td>
+						  <td>xx</td>
+						  <td>sss</td>
+						  <td>sss</td>
+						  <td>sss</td>
+						  <td>sss</td>
+						</tr>
+						
+					</table>
+				</div>
 
 			</div>
 			
-		</article> <!-- /article -->
 	
 	</section> <!-- / #main-content -->
 

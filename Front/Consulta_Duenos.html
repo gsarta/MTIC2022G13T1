@@ -6,6 +6,8 @@
 
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="./style/menu.css">
+		<link rel="stylesheet" href="./style/consulta.css">
+
 </head>
 
 <body>
@@ -42,35 +44,35 @@
 
 	</header>
 	
-	<section id="main-content">
+	<section class="consulta-filtros">
 	
-		<article>
-			<header>
-				
-				<h1>GRUPO 13 - CICLO 3</h1>
-			</header>
-			
-			
-			
-			<div class="content">
-				<P></P>
+		<div class="content-consulta">
+				<div class="box-filtros">
+					<h3>Consultar Propietarios</h3>
 
-				<label for="membership">Seleccione el campo por el que desea filtrar:</label>
-				<select name="Veterinario" id="Veterinario">
-					<option value="Id">Id</option>
-					<option value="Nombre">Nombre</option>
-					<option value="Apellido" selected>Apellido</option>
-				</select>
-				<p></p>
-				<label>Valor a buscar:</label>
-				<input type="text">
+					<div class="box-campo">
+						<label for="membership">Seleccione el campo por el que desea filtrar:</label>
+					</div>
+					
+					<div class="box-campo">
+						<select name="Veterinario" id="Veterinario" class="select">
+							<option value="Id" class="opciones">Id</option>
+							<option value="Nombre">Nombre</option>
+							<option value="Apellido" selected>Apellido</option>
+						</select>
+						<input type="text" name="Valor a buscar" placeholder="Valor a buscar" >
+					</div>
 
-				<p></p>
-				<button type="button" class="boton">Consultar</button>
-				<p></p>
+					<div class="box-campo">
+						<button type="button" class="boton">Consultar</button>
+						<button type="button" class="boton">Editar</button>
+						<button type="button" class="boton-eliminar">Eliminar</button>
+					</div>
+				</div>
+
+			<div class="table">
 			
-				<table class="Table">
-
+				<table>
 					<tr>
 					  <th>ID</th>
 					  <th>NOMBRE</th>
@@ -80,18 +82,20 @@
 					  <th>CORREO</th>
 					</tr>
 					<tr>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
+					  <td>1</td>
+					  <td>xx</td>
+					  <td>xx</td>
+					  <td>xx</td>
+					  <td>xx</td>
+					  <td>xx</td>
 					</tr>
-					
 				</table>
+
 			</div>
+
+		</div>
 			
-		</article> <!-- /article -->
+
 	
 	</section> <!-- / #main-content -->
 

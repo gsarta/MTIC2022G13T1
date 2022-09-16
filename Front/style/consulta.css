@@ -1,0 +1,52 @@
+.consulta-filtros{
+    height: 100vh;
+    margin-top: 100px;
+}
+.content-consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-filtros{
+    width: 500px;
+    box-shadow: 0px 0px 5px 0px #333333;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.box-campo{
+    padding: 0.5rem;
+}
+.select{
+    border: 1px solid #B5B2B2;
+    padding: 2px;   
+}
+.opciones{
+    padding: 5px;
+    
+}
+input{
+    padding: 4px;
+}
+
+/* ----- TABLA ----- */
+
+.table{
+   margin-top: 3.5rem;
+   background: #D6F5FF;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   color: black;
+   padding: 2.5rem;
+   
+}
+th{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+}

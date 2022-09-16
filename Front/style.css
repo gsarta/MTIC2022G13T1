@@ -45,15 +45,39 @@ img {
 }
 
 .boton {
-	background-color: white; 
-	color: black; 
-	border: 2px solid #008CBA;
+	background: #008CBA;
+	color: aliceblue;
+	font-weight: 600;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 3px;
+	
   }
   
-  .boton:hover {
-	background-color: #008CBA;
-	color: white;
-  }
+.boton:hover {
+	background:#B5B2B2;
+    color: black;
+    font-weight: 600;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.boton-eliminar{
+	background: #A22522;
+	color: aliceblue;
+	font-weight: 600;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 3px;
+}
+.boton-eliminar:hover{
+	background: #B5B2B2;
+	color: black;
+	font-weight: 600;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 3px;
+	cursor: pointer;
+}
 
 #inicio{
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./IMG/indeximg.jpg) ;

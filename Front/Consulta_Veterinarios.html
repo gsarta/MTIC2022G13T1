@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="./style/menu.css">
+		<link rel="stylesheet" href="./style/consulta.css">
 </head>
 
 <body>
@@ -42,34 +43,34 @@
 
 	</header>
 	
-	<section id="main-content">
+	<section class="consulta-filtros">
+		<div class="content-consulta">
+			<div class="box-filtros">
+				<h3>Consultar Veterinario</h3>
+
+				<div class="box-campo">
+					<label for="membership">Seleccione el campo por el que desea filtrar:</label>
+				</div>
+
+				<div class="box-campo">
+					<select name="Veterinario" id="Veterinario" class="select">
+						<option value="Id">Id</option>
+						<option value="Nombre">Nombre</option>
+						<option value="Apellido" selected>Apellido</option>
+					</select>
+					<input type="text" placeholder="Valor a buscar">
+				</div>
+
+				<div class="box-campo">
+					<button type="button" class="boton">Consultar</button>
+					<button type="button" class="boton">Editar</button>
+					<button type="button" class="boton-eliminar">Eliminar</button>
+				</div>
 	
-		<article>
-			<header>
-				
-				<h1>GRUPO 13 - CICLO 3</h1>
-			</header>
-			
-			
-			
-			<div class="content">
-				<P></P>
+			</div>
 
-				<label for="membership">Seleccione el campo por el que desea filtrar:</label>
-				<select name="Veterinario" id="Veterinario">
-					<option value="Id">Id</option>
-					<option value="Nombre">Nombre</option>
-					<option value="Apellido" selected>Apellido</option>
-				</select>
-				<p></p>
-				<label>Valor a buscar:</label>
-				<input type="text">
-
-				<p></p>
-				<button type="button" class="boton">Consultar</button>
-				<p></p>
-			
-				<table class="Table">
+			<div class="table">
+				<table>
 
 					<tr>
 					  <th>ID</th>
@@ -80,20 +81,20 @@
 					  <th>TARJETA PROFESIONAL</th>
 					</tr>
 					<tr>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
+					  <td>3</td>
+					  <td>aa</td>
+					  <td>aa</td>
+					  <td>aa</td>
+					  <td>aa</td>
+					  <td>a</td>
 					</tr>
 					
 				</table>
 			</div>
-			
-		</article> <!-- /article -->
+
+		</div>
 	
-	</section> <!-- / #main-content -->
+	</section>
 
 	
 </body>
