@@ -3,7 +3,7 @@ using MascotaFeliz.App.Dominio;
 
 namespace MascotaFeliz.App.Persistencia
 {
-    public class AppContext : DbContext
+    public class AppContext : DbContext //AppContext hereda de DbContex que es importado por el EntityFramework
     {
         public DbSet<Persona> Personas {get;set;}
         public DbSet<Veterinario> Veterinarios {get;set;}
