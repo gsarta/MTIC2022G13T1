@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mascota Feliz</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="~/css/style.css">
+
     
 </head>
 <body>
@@ -13,7 +13,31 @@
         
     </style>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+		<nav>
+			<ul class="navegacion">
+				<li><a href="../Index">Inicio</a></li>
+				<li><a href="#">Mascotas</a>
+					<ul> 
+						<li class="menu"><a href="Crear_Mascota.html" class="submenu-primero">Crear Mascotas</a></li>
+						<li><a href="Consulta_Mascota.html">Listar Mascotas</a></li> 
+					</ul> 
+				</li>
+				<li><a href="#">Proprietarios</a>
+					<ul> 
+						<li><a asp-page="/Duenos/EditarDuenos" class="submenu-primero">Crear Propietarios</a></li> 
+						<li><a asp-page="/Duenos/ListaDuenos">Listar Propietarios</a></li> 
+					</ul> 
+				</li>
+				<li><a href="#">Veterinarios</a>
+					<ul> 
+						<li><a href="Crear_Veterinarios.html" class="submenu-primero">Crear Veterinario</a></li> 
+						<li><a href="Consulta_Veterinarios.html">Listar Veterinarios</a></li> 
+					</ul> 
+				</li>
+			</ul>
+		</nav>
+
+        @* <nav>
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">MascotaFeliz</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -34,7 +58,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> *@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -42,11 +66,15 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @* <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - MascotaFeliz.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
+    </footer> *@
+    <footer id="main-footer">
+	    <p class="text-footer">&copy; 2022 IKIGAI - Grupo 13 - Ciclo 3</p>
     </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

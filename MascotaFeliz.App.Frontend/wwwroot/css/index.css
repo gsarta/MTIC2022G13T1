@@ -1,0 +1,19 @@
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/indeximg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#inicio{
+	/* background-image:  url("~/img/indeximg") ;
+	 */
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 3rem ;
+}
+/* linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
