@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MascotaFeliz.App.Dominio;
+using MascotaFeliz.App.Persistencia;
 
 namespace MascotaFeliz.App.Frontend.Pages
 {
@@ -13,10 +15,11 @@ namespace MascotaFeliz.App.Frontend.Pages
 
         public IEnumerable<Dueno> listaDuenos {get;set;}
 
-        public listaDuenosModel()
+        public ListaDuenosModel()
         {
-            this._repoDueno = new RepositorioDueno(new Persistencia.AppContex());
+            this._repoDueno = new RepositorioDueno(new Persistencia.AppContext());
         }
+
         public void OnGet()
         {
             listaDuenos = _repoDueno.GetAllDuenos();
