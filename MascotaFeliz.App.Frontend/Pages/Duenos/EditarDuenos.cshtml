@@ -5,24 +5,26 @@
 }
 <link rel="stylesheet" href="~/css/editarDueno.css">
 <link rel="stylesheet" href="~/css/style.css">
-<h2>Edicion o Creacion de Dueños</h2>
+<link rel="stylesheet" href="~/css/form.css">
+<h3>Edicion o Creacion de Dueños</h3>
+<div class="contenedor-principal">
 
-<form method="post">
-    <div>
-        <input type="hidden" asp-for = "dueno.Id">
-        <label asp-for="dueno.Nombres"></label>
-        <input asp-for="dueno.Nombres">
-        <label asp-for="dueno.Apellidos"></label>
-        <input asp-for="dueno.Apellidos">
-        <label asp-for="dueno.Direccion"></label>
-        <input asp-for="dueno.Direccion">
-        <label asp-for="dueno.Telefono"></label>
-        <input asp-for="dueno.Telefono">
-        <label asp-for="dueno.Correo"></label>
-        <input asp-for="dueno.Correo">
+    <form method="post">
+        <div class="contenedor">
+            <input type="hidden" asp-for = "dueno.Id">
+            <input asp-for="dueno.Nombres" placeholder="Nombres">
+            <input asp-for="dueno.Apellidos" placeholder="Apellidos">
+            <input asp-for="dueno.Direccion" placeholder="Direccion">
+            <input asp-for="dueno.Telefono" placeholder="Telefono">
+            <input asp-for="dueno.Correo" placeholder="Correo">
+        <div class="contenedor-botones">
+            <button type="submit" class="boton">Guardar</button>
+        </div>
 
-        <button type="submit" class="boton">Guardar</button>
+        </div>
+    </form>
+
+    <div class="contenedor-img">
+        <img src="../img/Dueno.jpg" alt="">
     </div>
-</form>
-
-<a asp-page="./ListaDuenos" class="boton">ListaDuenos</a>
+</div>

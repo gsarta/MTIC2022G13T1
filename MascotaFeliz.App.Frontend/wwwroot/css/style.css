@@ -2,10 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	color: #666;
-	
-	font-size: 1em;
-	line-height: 1.5rem;
+}
+main{
+
+	margin: auto;
 }
 /* ------------- TEXTOS -------------  */
 h1 {
@@ -21,7 +21,12 @@ h2{
     color: aliceblue;
     margin: 70px 0 0 0;
 }
+h3{
+	color: a#333333;
+	font-size: 2.5rem;
+	text-align: center;
 
+}
 p{
     color: aliceblue;
 }
@@ -40,15 +45,10 @@ img {
 
 
 /* CABECERA DE PAGINA */
-
-
-#main-content {
-	background: white;
-	margin: 100px  auto;
-	padding: 20px;
-	text-align: center;
-
+main{
+	margin-bottom: 30px;
 }
+
 
 .content{
 	display: flex;
@@ -60,14 +60,18 @@ img {
 	border: 1px solid;
 }
 
+/* --------------------- Botones --------------------- */
+
 .boton {
 	background: #008CBA;
+	box-shadow: 0px 0px 5px 0px #333333;
 	color: aliceblue;
 	font-weight: 600;
 	border: none;
 	padding: 0.5rem;
 	border-radius: 3px;
-	
+	margin: auto;
+	width: 200px;
   }
   
 .boton:hover {
@@ -95,11 +99,14 @@ img {
 	cursor: pointer;
 }
 
-#main-footer {
+
+
+/* --------------------- FOOTER --------------------- */
+
+footer {
 	position: absolute;
-	/* bottom: 0; */
 	width: 100%;
-	background: #333;
+	background: #1F1F1F;
 	color: white;
 	text-align: center;
 }
@@ -111,10 +118,20 @@ a{
 }
 header{
 	background: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 5px;
 }
 nav{
+	padding-top: 15px;
 	text-decoration: none;
 	color: aliceblue;
+}
+
+.logo{
+	margin-left: 150px;
+	width: 5%;
 }
 #main-header {
 	background: #333;

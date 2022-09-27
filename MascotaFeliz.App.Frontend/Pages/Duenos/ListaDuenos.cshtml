@@ -4,30 +4,50 @@
 }
 <link rel="stylesheet" href="~/css/listaDueno.css">
 <link rel="stylesheet" href="~/css/style.css">
-<h2>Lista de Propietarios</h2>
-<table class="table">
+<link rel="stylesheet" href="~/css/table.css">
 
-    @foreach(var dueno in Model.listaDuenos)
-    {
-        <tr>
+<h3>Lista de Propietarios</h3>
 
-            <td>@dueno.Nombres</td>
-            <td>@dueno.Apellidos</td>
+<div class="contenedor-principal">
 
-            <td>
-                <a class="btn btn-primary table-btn" asp-page="./DetallesDuenos" asp-route-duenoId="@dueno.Id">
-                    Detalle Dueño 
-                </a>
-            </td>
+    <table class="content-table">
 
-            <td>
-                <a class="btn btn-primary table-btn" asp-page="./EditarDuenos" asp-route-duenoId="@dueno.Id" >
-                    Editar Dueño
-                </a>
-            </td>
-        </tr>
-        
-    }
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Detalle</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
 
-</table>
-<a asp-page="./EditarDuenos" class="boton"> Adicionar Dueño </a>
+        <tbody>
+            @foreach(var dueno in Model.listaDuenos)
+            {
+                <tr>
+
+                    <td>@dueno.Nombres</td>
+                    <td>@dueno.Apellidos</td>
+                    <td>@dueno.Direccion</td>
+                    <td>@dueno.Telefono</td>
+                    <td>@dueno.Correo</td>
+
+                    <td>
+                        <a asp-page="./DetallesDuenos" asp-route-duenoId="@dueno.Id"><img src="../img/persona.png"></a>
+                    </td>
+
+                    <td>
+                        <a asp-page="./EditarDuenos" asp-route-duenoId="@dueno.Id"><img src="../img/lapiz.png"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+    <div class="contenedor-botones">
+        <a asp-page="./EditarDuenos" class="boton"> Adicionar Dueño </a>
+    </div>
+</div>
