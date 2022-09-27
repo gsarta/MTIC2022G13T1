@@ -16,7 +16,7 @@ namespace MascotaFeliz.App.Consola
             //ListarDuenos();
             //BuscarDueno(1);
 
-            AddVeterinario();
+            //AddVeterinario();
             //ListarVeterinarios();
 
             //AddMascota();
