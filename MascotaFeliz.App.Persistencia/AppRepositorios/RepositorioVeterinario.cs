@@ -39,6 +39,48 @@ namespace MascotaFeliz.App.Persistencia
         {
             return _appContext.Veterinarios;
         }
+
+        public Veterinario UpdateVeterinario(Veterinario veterinario)
+        {
+            var veterinarioEncontrado = _appContext.Veterinarios.FirstOrDefault(d => d.Id == veterinario.Id);
+            if (veterinarioEncontrado != null)
+            {
+                veterinarioEncontrado.Nombres = veterinario.Nombres;
+                veterinarioEncontrado.Apellidos = veterinario.Apellidos;
+                veterinarioEncontrado.Direccion = veterinario.Direccion;
+                veterinarioEncontrado.Telefono = veterinario.Telefono;
+                // veterinarioEncontrado.Correo = veterinario.Correo;
+                _appContext.SaveChanges();
+            }
+            return veterinarioEncontrado;
+        } 
+
+        public void DeleteVeterinario(int idVeterinario)
+        {
+            var veterinarioEncontrado = _appContext.Veterinarios.FirstOrDefault(d => d.Id == idVeterinario);
+            if (veterinarioEncontrado == null)
+                return;
+            _appContext.Veterinarios.Remove(veterinarioEncontrado);
+            _appContext.SaveChanges();
+        }
+
+         public Veterinario GetVeterinario(int idVeterinario)
+        {
+            return _appContext.Veterinarios.FirstOrDefault(d => d.Id == idVeterinario);
+        }
+
+         public IEnumerable<Veterinario> GetVeterinariosPorFiltro(string filtro)
+        {
+            var veterinarios = GetAllVeterinarios(); // Obtiene todos los saludos
+            if (veterinarios != null)  //Si se tienen saludos
+            {
+                if (!String.IsNullOrEmpty(filtro)) // Si el filtro tiene algun valor
+                {
+                    veterinarios = veterinarios.Where(s => s.Nombres.Contains(filtro));
+                }
+            }
+            return veterinarios;
+        }
         
     }
 }

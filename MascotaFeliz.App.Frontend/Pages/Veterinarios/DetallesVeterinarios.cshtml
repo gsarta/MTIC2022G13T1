@@ -1,20 +1,20 @@
 ﻿@page
-@model MascotaFeliz.App.Frontend.Pages.DetallesDuenosModel
+@model MascotaFeliz.App.Frontend.Pages.DetallesVeterinariosModel
 @{
 }
 <link rel="stylesheet" href="~/css/detalle.css">
 <link rel="stylesheet" href="~/css/style.css">
-<h3>Detalles del Propietario</h3>
+<h3>Detalles del Veterinarios</h3>
 <div class="contenedor-principal">
     
-    <p>id: @Model.dueno.Id</p>
-    <p>Nombre: @Model.dueno.Nombres</p>
-    <p>Apellido: @Model.dueno.Apellidos</p>
-    <p>Direccion: @Model.dueno.Direccion</p>
-    <p>Telefono: @Model.dueno.Telefono</p>
-    <p>Correo: @Model.dueno.Correo</p>
+    <p>id: @Model.veterinario.Id</p>
+    <p>Nombre: @Model.veterinario.Nombres</p>
+    <p>Apellido: @Model.veterinario.Apellidos</p>
+    <p>Direccion: @Model.veterinario.Direccion</p>
+    <p>Telefono: @Model.veterinario.Telefono</p>
+    @* <p>Correo: @Model.veterinario.Correo</p> *@
     <div class="contenedor-boton">
-        <a asp-page="./ListaDuenos" Class="boton">Lista Propietarios</a>
+        <a asp-page="./ListaVeterinarios" Class="boton">Lista Veterinarios</a>
     </div>
 
 </div>

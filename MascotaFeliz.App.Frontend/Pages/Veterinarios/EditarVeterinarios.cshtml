@@ -1,26 +1,26 @@
 ﻿@page
-@model MascotaFeliz.App.Frontend.Pages.EditarDuenosModel
+@model MascotaFeliz.App.Frontend.Pages.EditarVeterinariosModel
 @{
-    int duenoId = Model.dueno.Id;
+    int veterinarioId = Model.veterinario.Id;
 }
-<link rel="stylesheet" href="~/css/editarDueno.css">
+<link rel="stylesheet" href="~/css/editarVeterinario.css">
 <link rel="stylesheet" href="~/css/style.css">
 <link rel="stylesheet" href="~/css/form.css">
-<h3>Edicion o Creacion de Propietarios</h3>
+<h3>Edicion o Creacion de Vet</h3>
 <div class="contenedor-principal">
 
     <form method="post">
         <div class="contenedor">
-            <input type="hidden" asp-for = "dueno.Id">
-            <input asp-for="dueno.Nombres" placeholder="Nombres">
-            <input asp-for="dueno.Apellidos" placeholder="Apellidos">
-            <input asp-for="dueno.Direccion" placeholder="Direccion">
-            <input asp-for="dueno.Telefono" placeholder="Telefono">
-            <input asp-for="dueno.Correo" placeholder="Correo">
+            <input type="hidden" asp-for = "veterinario.Id">
+            <input asp-for="veterinario.Nombres" placeholder="Nombres">
+            <input asp-for="veterinario.Apellidos" placeholder="Apellidos">
+            <input asp-for="veterinario.Direccion" placeholder="Direccion">
+            <input asp-for="veterinario.Telefono" placeholder="Telefono">
+            @* <input asp-for="veterinario.Correo" placeholder="Correo"> *@
 
             <div class="contenedor-botones">
                 <button type="submit" class="boton">Guardar</button>
-                <button class="boton"><a asp-page="./ListaDuenos">Lista de Propietarios</a></button>
+                <a asp-page="./ListaVeterinarios" class="boton">Lista de Veterinarios</a>
             </div>
 
         </div>
