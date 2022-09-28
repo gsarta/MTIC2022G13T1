@@ -44,5 +44,40 @@ namespace MascotaFeliz.App.Persistencia
         {
             return _appContext.Mascotas.FirstOrDefault(d => d.Id == idMascota);
         }
+                public Mascota UpdateMascota(Mascota mascota)
+        {
+            var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(d => d.Id == mascota.Id);
+            if (mascotaEncontrado != null)
+            {
+                mascotaEncontrado.Nombre = mascota.Nombre;
+                mascotaEncontrado.Color = mascota.Color;
+                mascotaEncontrado.Especie = mascota.Especie;
+                mascotaEncontrado.Raza = mascota.Raza;
+                _appContext.SaveChanges();
+            }
+            return mascotaEncontrado;
+        }
+
+        public void DeleteMascota(int idMascota)
+        {
+            var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(d => d.Id == idMascota);
+            if (mascotaEncontrado == null)
+                return;
+            _appContext.Mascotas.Remove(mascotaEncontrado);
+            _appContext.SaveChanges();
+        }
+
+        public IEnumerable<Mascota> GetMascotasPorFiltro(string filtro)
+        {
+            var mascotas = GetAllMascotas(); // Obtiene todos los saludos
+            if (mascotas != null)  //Si se tienen saludos
+            {
+                if (!String.IsNullOrEmpty(filtro)) // Si el filtro tiene algun valor
+                {
+                    mascotas = mascotas.Where(s => s.Nombre.Contains(filtro));
+                }
+            }
+            return mascotas;
+        }
     }
 }

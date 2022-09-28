@@ -1,12 +1,12 @@
 ﻿@page
-@model MascotaFeliz.App.Frontend.Pages.ListaDuenosModel
+@model MascotaFeliz.App.Frontend.Pages.ListaMascotasModel
 @{
 }
-<link rel="stylesheet" href="~/css/listaDueno.css">
+<link rel="stylesheet" href="~/css/listaMascota.css">
 <link rel="stylesheet" href="~/css/style.css">
 <link rel="stylesheet" href="~/css/table.css">
 
-<h3>Lista de Propietarios</h3>
+<h3>Lista de Mascotas</h3>
 
 <div class="contenedor-principal">
 
@@ -15,32 +15,31 @@
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Dirección</th>
-                <th>Telefono</th>
-                <th>Correo</th>
+                <th>Color</th>
+                <th>Especie</th>
+                <th>Raza</th>
                 <th>Detalle</th>
                 <th>Editar</th>
             </tr>
         </thead>
 
         <tbody>
-            @foreach(var dueno in Model.listaDuenos)
+            @foreach(var mascota in Model.listaMascotas)
             {
                 <tr>
 
-                    <td>@dueno.Nombres</td>
-                    <td>@dueno.Apellidos</td>
-                    <td>@dueno.Direccion</td>
-                    <td>@dueno.Telefono</td>
-                    <td>@dueno.Correo</td>
+                    <td>@mascota.Nombre</td>
+                    <td>@mascota.Color</td>
+                    <td>@mascota.Especie</td>
+                    <td>@mascota.Raza</td>
+
 
                     <td>
-                        <a asp-page="./DetallesMascotas" asp-route-duenoId="@dueno.Id"><img src="../img/persona.png"></a>
+                        <a asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id"><img src="../img/persona.png"></a>
                     </td>
 
                     <td>
-                        <a asp-page="./EditarMascotas" asp-route-duenoId="@dueno.Id"><img src="../img/lapiz.png"></a>
+                        <a asp-page="./EditarMascotas" asp-route-mascotaId="@mascota.Id"><img src="../img/lapiz.png"></a>
                     </td>
                 </tr>
             }
@@ -48,6 +47,6 @@
 
     </table>
     <div class="contenedor-botones">
-        <a asp-page="./EditarDuenos" class="boton"> Adicionar Dueño </a>
+        <a asp-page="./EditarMascotas" class="boton"> Adicionar mascota </a>
     </div>
 </div>
