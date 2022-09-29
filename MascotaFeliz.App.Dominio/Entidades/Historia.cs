@@ -7,6 +7,6 @@ namespace MascotaFeliz.App.Dominio
     {
         public int Id {get;set;}
         public DateTime FechaInicial {get;set;}
-        public List<VisitaPyP> VisitaPyP {get;set;} //crea una lista necesita la importación de la línea #2
+        public List<VisitaPyP> VisitasPyP {get;set;} //crea una lista necesita la importación de la línea #2
     }
 }

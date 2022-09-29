@@ -18,6 +18,7 @@
                 <th>Apellido</th>
                 <th>Dirección</th>
                 <th>Telefono</th>
+                <th>Tarjeta Profesional</th>
                 <th>Detalle</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
@@ -33,7 +34,7 @@
                     <td>@veterinario.Apellidos</td>
                     <td>@veterinario.Direccion</td>
                     <td>@veterinario.Telefono</td>
-                    @* <td>@veterinario.Correo</td> *@
+                    <td>@veterinario.TarjetaProfesional</td>
 
                     <td>
                         <a asp-page="./DetallesVeterinarios" asp-route-veterinarioId="@veterinario.Id"><img src="../img/persona.png"></a>
