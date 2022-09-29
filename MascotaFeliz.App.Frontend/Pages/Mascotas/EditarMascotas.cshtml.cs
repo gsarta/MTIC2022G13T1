@@ -15,7 +15,6 @@ namespace MascotaFeliz.App.Frontend.Pages
         private readonly IRepositorioMascota _repoMascota;
         private readonly IRepositorioDueno _repoDueno;
         private readonly IRepositorioVeterinario _repoVeterinario;
-        DateTime FechaInicial;
         [BindProperty]
         public Mascota mascota { get; set; }
         public Veterinario veterinario { get; set; }

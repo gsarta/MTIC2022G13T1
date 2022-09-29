@@ -20,6 +20,7 @@
                 <th>Raza</th>
                 <th>Detalle</th>
                 <th>Editar</th>
+                @* <th>Historia</th> *@
             </tr>
         </thead>
 
@@ -41,8 +42,13 @@
                     <td>
                         <a asp-page="./EditarMascotas" asp-route-mascotaId="@mascota.Id"><img src="../img/lapiz.png"></a>
                     </td>
+
+                    @* <td>
+                        <a asp-page="./HistoriaMascotas" asp-route-mascotaId="@mascota.Id"><img src="../img/lapiz.png"></a>
+                    </td> *@
                 </tr>
             }
+            
         </tbody>
 
     </table>

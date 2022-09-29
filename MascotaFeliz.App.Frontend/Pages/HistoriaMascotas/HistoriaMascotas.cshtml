@@ -1,0 +1,38 @@
+﻿@* @page
+@model MascotaFeliz.App.Frontend.Pages.EditarMascotasModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/style.css">
+<link rel="stylesheet" href="~/css/form.css">
+
+<h3>Edicion o Creacion de Mascotas</h3>
+<div class="contenedor-principal">
+
+    <form method="post">
+        <div class="contenedor">
+            <input type="hidden" asp-for = "mascota.Id">
+            <input asp-for="mascota.Nombre" placeholder="Nombre">
+            <input asp-for="mascota.Color" placeholder="Color">
+            <input asp-for="mascota.Especie" placeholder="Especie">
+            <input asp-for="mascota.Raza" placeholder="Raza">
+            <input asp-for="VisitaPyP.Temperatura" placeholder="Temperatura">
+            <input asp-for="VisitaPyP.Peso" placeholder="Peso">
+            <input asp-for="VisitaPyP.FrecuenciaRespiratoria" placeholder="FrecuenciaRespiratoria">
+            <input asp-for="VisitaPyP.FrecuenciaCardiaca" placeholder="FrecuenciaCardiaca">
+            <input asp-for="VisitaPyP.EstadoAnimo" placeholder="EstadoAnimo">
+            <textarea asp-for="VisitaPyP.Recomendaciones"  cols="30" rows="10">Recomendaciones</textarea>
+
+
+
+            <div class="contenedor-botones">
+                <button type="submit" class="boton">Guardar</button>
+                <button class="boton" type="button"><a asp-page="./ListaMascotas">Lista de Mascotas</a></button>
+            </div>
+
+        </div>
+    </form>
+
+    <div class="contenedor-img">
+    </div>
+</div> *@

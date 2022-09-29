@@ -125,3 +125,4 @@ C:\proyectos\MTIC2022G13T1\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Raz
 C:\proyectos\MTIC2022G13T1\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\DetallesVeterinarios.cshtml.g.cs
 C:\proyectos\MTIC2022G13T1\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\EditarVeterinarios.cshtml.g.cs
 C:\proyectos\MTIC2022G13T1\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListaVeterinarios.cshtml.g.cs
+C:\proyectos\MTIC2022G13T1\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\HistoriaMascotas\HistoriaMascotas.cshtml.g.cs

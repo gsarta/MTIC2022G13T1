@@ -1,0 +1,25 @@
+.contenedor-equipo{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.equipo{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    /* border: 1px solid red; */
+    text-align: center;
+    align-items: center;
+}
+.img-perfil{
+    width: 150px;
+    border-radius: 150px;
+}
+.img-redes{
+    width: 25px;
+}
+.titulo-secundario h2{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+}
