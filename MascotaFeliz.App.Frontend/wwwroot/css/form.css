@@ -3,7 +3,7 @@ form{
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     border-radius: 5px;
     width: 450px;
-    margin: auto;
+    /* margin: auto; */
     padding: 20px 0px ;
     background-color: white;
 }
@@ -14,14 +14,17 @@ form input{
     padding: 5px;
     border: 1px solid #B5B2B2;
 }
-select{
-    margin-left: 30px;
-    margin-bottom: 30px;
+.select{
     /* box-shadow: 0px 0px 5px 0px #333333; */
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
     border: 1px solid #B5B2B2;
-    padding: 2px;
-    border-radius: 2px;
+    width: 185px;
+    border-radius: 5px;
 }
+
 .enviar{
     background:#008CBA ;
     color: aliceblue;
@@ -40,11 +43,6 @@ select{
     width: 250px;
     cursor: pointer;
 }
-.img-crear-mascota{
-    width: 50%;
-    position: relative;
-    
-}
 
 input{
     border-radius: 5px;
@@ -56,9 +54,11 @@ a{
 }
 
 .contenedor-principal{
+    padding: 50px 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
 .contenedor{
@@ -70,4 +70,9 @@ a{
 
 .contenedor-botones{
     padding-top: 25px;
+}
+.contenedor-img{
+
+    text-align: center;
+
 }

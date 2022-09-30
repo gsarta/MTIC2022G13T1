@@ -6,10 +6,10 @@
 <link rel="stylesheet" href="~/css/editarVeterinario.css">
 <link rel="stylesheet" href="~/css/style.css">
 <link rel="stylesheet" href="~/css/form.css">
-<h3>Edicion o Creacion de Vet</h3>
 <div class="contenedor-principal">
 
     <form method="post">
+        <h3>Edicion o Creacion de Veterinarios</h3>
         <div class="contenedor">
             <input type="hidden" asp-for = "veterinario.Id">
             <input asp-for="veterinario.Nombres" placeholder="Nombres">
@@ -20,7 +20,7 @@
 
             <div class="contenedor-botones">
                 <button type="submit" class="boton">Guardar</button>
-                <a asp-page="./ListaVeterinarios" class="boton">Lista de Veterinarios</a>
+                <button class="boton" type="button"><a asp-page="./ListaVeterinarios" >Lista de Veterinarios</a></button>
             </div>
 
         </div>
